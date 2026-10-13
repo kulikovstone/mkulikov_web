@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Maksim Kulikov's work experience: Android engineering and AI-assisted fullstack development for IT One, Gazprombank, SOGAZ-Med, Lenta, EVRAZ, and PEK." />
+    <title>Work experience — Maksim Kulikov</title>
+  </head>
+  <body class="experience-page">
+    <main class="experience">
+      <nav class="experience-nav" aria-label="Page navigation">
+        <a class="text-link" href="/">← Back to home</a>
+      </nav>
+
+      <header class="experience-header">
+        <p class="experience-owner">Maksim Kulikov · Software Engineer</p>
+        <h1>Work experience</h1>
+        <p class="experience-summary">
+          8+ years building Android applications for banking, healthcare, retail,
+          logistics, and enterprise operations. Additional experience in
+          AI-assisted fullstack development, including backend APIs, admin
+          interfaces, server setup, and automated deployment.
+        </p>
+      </header>
+
+      <section class="employment" aria-labelledby="it-one">
+        <header class="employment-header">
+          <h2 id="it-one">IT One</h2>
+          <p class="employment-dates"><time datetime="2022-02">Feb 2022</time> — Present</p>
+        </header>
+
+        <article class="project" aria-labelledby="curator-community">
+          <p class="project-role">AI-Assisted Fullstack Developer</p>
+          <header class="project-header">
+            <h3 id="curator-community">IT One · Curator Community</h3>
+            <p class="project-dates"><time datetime="2026-09">Sep 2026</time> — Present</p>
+          </header>
+          <p class="project-context">
+            A platform for IT One's curator community, developed with AI-assisted
+            workflows across backend, frontend, testing, and deployment.
+          </p>
+          <ul class="contributions">
+            <li>
+              Built a Kotlin/Ktor REST API backed by PostgreSQL, with JWT-based
+              admin authentication, input validation, and CRUD operations for
+              curator profiles, achievements, ranks, and nominations.
+            </li>
+            <li>
+              Developed a responsive TypeScript website and admin panel with
+              session handling, profile editing, and management of achievements,
+              ranks, and nominations.
+            </li>
+            <li>
+              Implemented server-side curator ratings calculated from achievements,
+              nominations, and nomination victories, with transactional data updates.
+            </li>
+            <li>
+              Added automated tests for API authorization, CRUD operations,
+              rating calculations, and frontend form validation.
+            </li>
+            <li>
+              Configured an Ubuntu VPS with PostgreSQL, Nginx reverse proxy,
+              a systemd service, and HTTPS with automatic certificate renewal.
+            </li>
+            <li>
+              Set up independent GitHub Actions pipelines for backend and frontend
+              builds and SSH deployment, with versioned releases, health checks,
+              and automatic rollback on failed deployment checks.
+            </li>
+          </ul>
+          <p class="project-stack">
+            <span>Technologies:</span> Kotlin, Ktor, PostgreSQL, Exposed, JWT,
+            TypeScript, Vite, Ubuntu, Nginx, systemd, GitHub Actions, SSH
+          </p>
+        </article>
+
+        <article class="project" aria-labelledby="gazprombank">
+          <p class="project-role">Android Developer</p>
+          <header class="project-header">
+            <h3 id="gazprombank">Gazprombank · Mobile banking</h3>
+            <p class="project-dates"><time datetime="2022-02">Feb 2022</time> — <time datetime="2026-08">Aug 2026</time></p>
+          </header>
+          <p class="project-context">
+            A major banking app covering accounts, cards, lending, investments,
+            documents, customer requests, and branch and ATM discovery.
+          </p>
+          <ul class="contributions">
+            <li>
+              Took over the former Dashboard 360 team's features within the CoreMB
+              platform team. Resolved or closed 100+ defects and diagnosed critical
+              crashes, including obfuscation-related failures.
+            </li>
+            <li>
+              Rebuilt the Offices and ATMs feature in Jetpack Compose and redesigned
+              its architecture around state-driven UI, intents and events, a dedicated
+              map controller, and clear separation of responsibilities.
+            </li>
+            <li>
+              Modernized existing features by migrating legacy XML design-system
+              components to Compose and replacing older navigation with Navigation 3.
+            </li>
+            <li>
+              Redesigned onboarding hints as a reusable component for any screen,
+              removing dependencies on the home screen and interference between scenarios.
+            </li>
+            <li>
+              Built a horizontally scrolling Quick Actions panel with a welcome
+              animation, introducing Lottie to the project and extending a design-system component.
+            </li>
+            <li>
+              Developed a feature for prepackaged financial products that became
+              one of the app's most profitable offerings.
+            </li>
+          </ul>
+          <p class="project-stack">
+            <span>Technologies:</span> Kotlin, Jetpack Compose, Navigation 3,
+            Coroutines, Kotlin Flow, MVI, MVVM, Dagger 2, Koin, Retrofit, Room,
+            Google Maps, Lottie
+          </p>
+        </article>
+      </section>
+
+      <section class="employment" aria-labelledby="tm-technologies">
+        <header class="employment-header">
+          <h2 id="tm-technologies">TM Technologies</h2>
+          <p class="employment-dates"><time datetime="2021-02">Feb 2021</time> — <time datetime="2021-11">Nov 2021</time></p>
+        </header>
+
+        <article class="project" aria-labelledby="sogaz-insurance">
+          <p class="project-role">Android Developer</p>
+          <header class="project-header">
+            <h3 id="sogaz-insurance">SOGAZ-Med · Health insurance</h3>
+            <p class="project-dates"><time datetime="2021-03">Mar 2021</time> — <time datetime="2021-11">Nov 2021</time></p>
+          </header>
+          <p class="project-context">
+            A client-server mobile app for applying for, registering, and managing
+            compulsory medical insurance policies.
+          </p>
+          <ul class="contributions">
+            <li>
+              Selected the technology stack, designed the application architecture,
+              and independently implemented the core functionality from scratch.
+            </li>
+            <li>
+              Built navigation, dependency injection, backend API integration,
+              shared screens, and centralized error handling.
+            </li>
+            <li>
+              Integrated local storage, biometric authentication, SMS flows,
+              maps, analytics, and Firebase services.
+            </li>
+            <li>
+              Developed the design system, reviewed code, and mentored developers
+              while collaborating with design and QA teams.
+            </li>
+          </ul>
+          <p class="project-stack">
+            <span>Technologies:</span> Kotlin, MVVM, Hilt, Coroutines,
+            Android Navigation, Room, DataStore, Retrofit, Firebase, Google Maps,
+            Biometrics, AppMetrica
+          </p>
+        </article>
+
+        <article class="project" aria-labelledby="sogaz-telemedicine">
+          <p class="project-role">Android Developer</p>
+          <header class="project-header">
+            <h3 id="sogaz-telemedicine">SOGAZ-Med · Telemedicine</h3>
+            <p class="project-dates"><time datetime="2021-02">Feb 2021</time></p>
+          </header>
+          <p class="project-context">An app for telemedicine and online consultations with doctors.</p>
+          <ul class="contributions">
+            <li>
+              Implemented submission of COVID-19 test results and integrated the
+              new workflow with the existing backend API.
+            </li>
+          </ul>
+          <p class="project-stack"><span>Technologies:</span> Kotlin, Android SDK, MVP, Moxy, Retrofit, Gson</p>
+        </article>
+      </section>
+
+      <section class="employment" aria-labelledby="krit">
+        <header class="employment-header">
+          <h2 id="krit">Krit</h2>
+          <p class="employment-dates"><time datetime="2019-05">May 2019</time> — <time datetime="2020-10">Oct 2020</time></p>
+        </header>
+
+        <article class="project" aria-labelledby="lenta">
+          <p class="project-role">Android Developer</p>
+          <header class="project-header">
+            <h3 id="lenta">Lenta · Retail operations</h3>
+            <p class="project-dates"><time datetime="2019-05">May 2019</time> — <time datetime="2020-10">Oct 2020</time></p>
+          </header>
+          <p class="project-context">A suite of internal Android apps for hypermarket operations.</p>
+          <ul class="contributions">
+            <li>
+              Independently built several store applications for inventory,
+              stock transfers, write-offs, employee task management, and other
+              operational workflows.
+            </li>
+            <li>
+              Developed a shared internal library, reducing duplicated code and
+              keeping implementations consistent across applications.
+            </li>
+          </ul>
+          <p class="project-stack">
+            <span>Technologies:</span> Kotlin, MVVM, Coroutines, Dagger 2,
+            Room, Retrofit, LiveData, Data Binding, Firebase
+          </p>
+        </article>
+
+        <article class="project" aria-labelledby="evraz">
+          <p class="project-role">Android Developer</p>
+          <header class="project-header">
+            <h3 id="evraz">EVRAZ · Document workflows</h3>
+            <p class="project-dates"><time datetime="2019-12">Dec 2019</time></p>
+          </header>
+          <p class="project-context">An internal app for enterprise document management.</p>
+          <ul class="contributions">
+            <li>
+              Maintained the application, extended existing workflows, and
+              resolved defects in legacy code.
+            </li>
+          </ul>
+          <p class="project-stack"><span>Technologies:</span> Java, Android SDK, MVP, Gson, unit testing</p>
+        </article>
+      </section>
+
+      <section class="employment" aria-labelledby="open-solutions">
+        <header class="employment-header">
+          <h2 id="open-solutions">Open Solutions</h2>
+          <p class="employment-dates"><time datetime="2018-05">May 2018</time> — <time datetime="2019-03">Mar 2019</time></p>
+        </header>
+
+        <article class="project" aria-labelledby="pek">
+          <p class="project-role">Android Developer</p>
+          <h3 id="pek">PEK · Freight logistics</h3>
+          <p class="project-context">A mobile app for booking, tracking, and managing freight shipments.</p>
+          <ul class="contributions">
+            <li>Built freight cost calculation and shipment booking flows based on calculated quotes.</li>
+            <li>Implemented multi-step registration and custom document capture using the Camera API.</li>
+            <li>Refactored legacy code and fixed defects in existing features.</li>
+          </ul>
+          <p class="project-stack"><span>Technologies:</span> Java, Android Navigation, Camera API, OrmLite, RxJava</p>
+        </article>
+      </section>
+
+      <footer class="experience-footer">
+        <a class="text-link" href="/">← Back to home</a>
+        <a class="text-link" href="https://t.me/kulikovman">@kulikovman</a>
+      </footer>
+    </main>
+    <script type="module" src="/src/experience.js"></script>
+  </body>
+</html>

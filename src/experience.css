@@ -1,0 +1,136 @@
+.experience-page {
+  display: block;
+  padding: 48px 24px 64px;
+}
+
+.experience {
+  width: min(100%, 800px);
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.experience-nav { font-size: 0.95rem; }
+
+.experience-header { margin: 44px 0 40px; }
+
+.experience-owner {
+  margin-bottom: 12px;
+  color: #526c73;
+  font-size: 0.95rem;
+}
+
+.experience h1 {
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.experience-summary {
+  max-width: 70ch;
+  color: #52616a;
+}
+
+.employment {
+  padding: 32px 0 36px;
+  border-top: 1px solid #d8dcd8;
+}
+
+.employment-header,
+.project-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.employment h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
+}
+
+.project-role {
+  margin: 0 0 4px;
+  color: #52616a;
+}
+
+.employment-dates,
+.project-dates {
+  flex-shrink: 0;
+  color: #52616a;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.project { margin-top: 24px; }
+.project + .project { margin-top: 32px; }
+
+.project h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.project-context {
+  margin-top: 8px;
+  color: #52616a;
+}
+
+.contributions {
+  margin: 16px 0;
+  padding-left: 22px;
+}
+
+.contributions li { padding-left: 3px; }
+.contributions li + li { margin-top: 8px; }
+.contributions li::marker { color: #526c73; }
+
+.project-stack {
+  color: #52616a;
+  font-size: 0.875rem;
+}
+
+.project-stack span {
+  color: #172b3a;
+  font-weight: 600;
+}
+
+.experience-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px 24px;
+  padding-top: 28px;
+  border-top: 1px solid #d8dcd8;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .experience-page { padding: 28px 20px 40px; }
+  .experience-header { margin: 32px 0; }
+  .experience-owner { max-width: 28ch; }
+  .employment { padding: 28px 0 32px; }
+  .employment-header,
+  .project-header {
+    display: block;
+  }
+  .employment-dates { margin-top: 8px; }
+  .project-dates { margin-top: 4px; }
+}
+
+@media print {
+  :root { color: #000; background: #fff; }
+  .experience-page { padding: 0; }
+  .experience { width: 100%; font-size: 10pt; }
+  .experience-nav,
+  .experience-footer { display: none; }
+  .experience-header { margin: 0 0 24px; }
+  .employment { padding: 20px 0; }
+  .employment-header,
+  .project-header { break-after: avoid; }
+  .project-role { break-after: avoid; }
+  .contributions li,
+  .project-stack { break-inside: avoid; }
+}
