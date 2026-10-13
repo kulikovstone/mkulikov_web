@@ -59,6 +59,27 @@ p { margin: 0; }
   text-wrap: pretty;
 }
 
+.contact {
+  margin-top: 32px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #a1afb0;
+  text-underline-offset: 4px;
+}
+
+.contact a:hover { text-decoration-color: currentColor; }
+
+.contact a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+
 @media (max-width: 480px) {
   body { padding: 28px 20px; }
   .profile-intro { padding-top: 24px; }
