@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Опыт работы Максима Куликова: Android-разработка и фулстек-разработка с помощью ИИ для IT One, Газпромбанка, СОГАЗ-Мед, Ленты, ЕВРАЗа и ПЭК." />
+    <link rel="alternate" hreflang="en" href="https://mkulikov.com/experience/" />
+    <link rel="alternate" hreflang="ru" href="https://mkulikov.com/experience/ru/" />
+    <link rel="alternate" hreflang="x-default" href="https://mkulikov.com/experience/" />
+    <title>Опыт работы — Максим Куликов</title>
+  </head>
+  <body class="experience-page">
+    <main class="experience">
+      <nav class="experience-nav" aria-label="Навигация по странице">
+        <a class="text-link" href="/">← На главную</a>
+        <div class="language-switch" role="group" aria-label="Язык страницы">
+          <a href="/experience/" lang="en" hreflang="en" aria-label="English">EN</a>
+          <a href="/experience/ru/" lang="ru" hreflang="ru" aria-label="Русский" aria-current="page">RU</a>
+        </div>
+      </nav>
+
+      <header class="experience-header">
+        <p class="experience-owner">Максим Куликов · Инженер-программист</p>
+        <h1>Опыт работы</h1>
+        <p class="experience-summary">
+          Более 8 лет разрабатываю Android-приложения для банков, здравоохранения,
+          ритейла, логистики и внутренних процессов компаний. Также занимаюсь
+          фулстек-разработкой с помощью ИИ: создаю серверные API и административные
+          интерфейсы, настраиваю серверы и автоматизирую развёртывание.
+        </p>
+      </header>
+
+      <section class="employment" aria-labelledby="it-one">
+        <header class="employment-header">
+          <h2 id="it-one">IT One</h2>
+          <p class="employment-dates"><time datetime="2022-02">Февраль 2022</time> — настоящее время</p>
+        </header>
+
+        <article class="project" aria-labelledby="curator-community">
+          <p class="project-role">Фулстек-разработчик с использованием ИИ</p>
+          <header class="project-header">
+            <h3 id="curator-community">IT One · Сообщество кураторов</h3>
+            <p class="project-dates"><time datetime="2026-09">Сентябрь 2026</time> — настоящее время</p>
+          </header>
+          <p class="project-context">
+            Платформа для сообщества кураторов IT One. Самостоятельно веду весь цикл:
+            анализ требований, проектирование UI/UX, разработку клиентской и серверной
+            частей, тестирование и развёртывание. Использую ИИ в процессе работы.
+          </p>
+          <ul class="contributions">
+            <li>
+              С нуля спроектировал административный интерфейс: определил разделы,
+              сценарии работы и бизнес-правила, включая добавление кураторов
+              и управление их профилями.
+            </li>
+            <li>
+              Разработал REST API на Kotlin/Ktor с PostgreSQL, JWT-аутентификацией
+              администраторов, валидацией входных данных и CRUD-операциями для
+              профилей кураторов, достижений, рангов и номинаций.
+            </li>
+            <li>
+              Создал адаптивный сайт и административную панель на TypeScript:
+              управление сессиями, редактирование профилей, работа с достижениями,
+              рангами и номинациями.
+            </li>
+            <li>
+              Реализовал на сервере расчёт рейтинга кураторов на основе достижений,
+              номинаций и побед в них, с обновлением данных в транзакциях.
+            </li>
+            <li>
+              Добавил автоматические тесты авторизации API, CRUD-операций,
+              расчёта рейтинга и валидации форм на фронтенде.
+            </li>
+            <li>
+              Настроил VPS на Ubuntu: PostgreSQL, обратный прокси Nginx,
+              сервис systemd и HTTPS с автоматическим продлением сертификатов.
+            </li>
+            <li>
+              Настроил отдельные пайплайны GitHub Actions для сборки и развёртывания
+              бэкенда и фронтенда по SSH: версионирование релизов, проверку
+              работоспособности и автоматический откат при неудачной проверке.
+            </li>
+          </ul>
+          <p class="project-stack">
+            <span>Технологии:</span> Kotlin, Ktor, PostgreSQL, Exposed, JWT,
+            TypeScript, Vite, Ubuntu, Nginx, systemd, GitHub Actions, SSH
+          </p>
+        </article>
+
+        <article class="project" aria-labelledby="gazprombank">
+          <p class="project-role">Android-разработчик</p>
+          <header class="project-header">
+            <h3 id="gazprombank">Газпромбанк · Мобильный банк</h3>
+            <p class="project-dates"><time datetime="2022-02">Февраль 2022</time> — <time datetime="2026-08">Август 2026</time></p>
+          </header>
+          <p class="project-context">
+            Крупное банковское приложение: счета, карты, кредиты, инвестиции,
+            документы, обращения клиентов, поиск отделений и банкоматов.
+          </p>
+          <ul class="contributions">
+            <li>
+              В составе платформенной команды CoreMB принял в поддержку функциональность
+              бывшей команды Dashboard 360. Исправил или закрыл более 100 дефектов,
+              диагностировал критические падения, в том числе связанные с обфускацией.
+            </li>
+            <li>
+              Переписал раздел «Офисы и банкоматы» на Jetpack Compose и переработал
+              его архитектуру: UI на основе состояния, интенты и события, отдельный
+              контроллер карты и чёткое разделение ответственности.
+            </li>
+            <li>
+              Модернизировал существующую функциональность: переносил устаревшие
+              XML-компоненты дизайн-системы на Compose и заменял прежнюю навигацию
+              на Navigation 3.
+            </li>
+            <li>
+              Переработал обучающие подсказки в переиспользуемый компонент для любых
+              экранов, устранив зависимость от главного экрана и взаимное влияние сценариев.
+            </li>
+            <li>
+              Создал горизонтальную панель быстрых действий с приветственной анимацией:
+              внедрил Lottie в проект и расширил компонент дизайн-системы.
+            </li>
+            <li>
+              Разработал функциональность пакетных финансовых продуктов, которая стала
+              одним из наиболее прибыльных предложений приложения.
+            </li>
+          </ul>
+          <p class="project-stack">
+            <span>Технологии:</span> Kotlin, Jetpack Compose, Navigation 3,
+            Coroutines, Kotlin Flow, MVI, MVVM, Dagger 2, Koin, Retrofit, Room,
+            Google Maps, Lottie
+          </p>
+        </article>
+      </section>
+
+      <section class="employment" aria-labelledby="tm-technologies">
+        <header class="employment-header">
+          <h2 id="tm-technologies">ТМ Технологии</h2>
+          <p class="employment-dates"><time datetime="2021-02">Февраль 2021</time> — <time datetime="2021-11">Ноябрь 2021</time></p>
+        </header>
+
+        <article class="project" aria-labelledby="sogaz-insurance">
+          <p class="project-role">Android-разработчик</p>
+          <header class="project-header">
+            <h3 id="sogaz-insurance">СОГАЗ-Мед · Медицинское страхование</h3>
+            <p class="project-dates"><time datetime="2021-03">Март 2021</time> — <time datetime="2021-11">Ноябрь 2021</time></p>
+          </header>
+          <p class="project-context">
+            Клиент-серверное мобильное приложение для подачи заявлений, оформления
+            и управления полисами обязательного медицинского страхования.
+          </p>
+          <ul class="contributions">
+            <li>
+              Выбрал стек технологий, спроектировал архитектуру приложения
+              и самостоятельно реализовал основную функциональность с нуля.
+            </li>
+            <li>
+              Реализовал навигацию, внедрение зависимостей, интеграцию с серверным API,
+              общие экраны и централизованную обработку ошибок.
+            </li>
+            <li>
+              Подключил локальное хранилище, биометрическую аутентификацию,
+              SMS-сценарии, карты, аналитику и сервисы Firebase.
+            </li>
+            <li>
+              Разрабатывал дизайн-систему, проводил ревью кода и помогал коллегам
+              развиваться, взаимодействуя с дизайнерами и командой тестирования.
+            </li>
+          </ul>
+          <p class="project-stack">
+            <span>Технологии:</span> Kotlin, MVVM, Hilt, Coroutines,
+            Android Navigation, Room, DataStore, Retrofit, Firebase, Google Maps,
+            Biometrics, AppMetrica
+          </p>
+        </article>
+
+        <article class="project" aria-labelledby="sogaz-telemedicine">
+          <p class="project-role">Android-разработчик</p>
+          <header class="project-header">
+            <h3 id="sogaz-telemedicine">СОГАЗ-Мед · Телемедицина</h3>
+            <p class="project-dates"><time datetime="2021-02">Февраль 2021</time></p>
+          </header>
+          <p class="project-context">Приложение для телемедицины и онлайн-консультаций с врачами.</p>
+          <ul class="contributions">
+            <li>
+              Реализовал отправку результатов тестов на COVID-19 и интегрировал
+              новый сценарий с существующим серверным API.
+            </li>
+          </ul>
+          <p class="project-stack"><span>Технологии:</span> Kotlin, Android SDK, MVP, Moxy, Retrofit, Gson</p>
+        </article>
+      </section>
+
+      <section class="employment" aria-labelledby="krit">
+        <header class="employment-header">
+          <h2 id="krit">Крит</h2>
+          <p class="employment-dates"><time datetime="2019-05">Май 2019</time> — <time datetime="2020-10">Октябрь 2020</time></p>
+        </header>
+
+        <article class="project" aria-labelledby="lenta">
+          <p class="project-role">Android-разработчик</p>
+          <header class="project-header">
+            <h3 id="lenta">Лента · Работа гипермаркетов</h3>
+            <p class="project-dates"><time datetime="2019-05">Май 2019</time> — <time datetime="2020-10">Октябрь 2020</time></p>
+          </header>
+          <p class="project-context">Набор внутренних Android-приложений для работы гипермаркетов.</p>
+          <ul class="contributions">
+            <li>
+              Самостоятельно разработал несколько приложений для инвентаризации,
+              перемещения и списания товаров, управления задачами сотрудников
+              и других рабочих процессов.
+            </li>
+            <li>
+              Создал общую внутреннюю библиотеку, сократив дублирование кода
+              и обеспечив единообразие реализации в разных приложениях.
+            </li>
+          </ul>
+          <p class="project-stack">
+            <span>Технологии:</span> Kotlin, MVVM, Coroutines, Dagger 2,
+            Room, Retrofit, LiveData, Data Binding, Firebase
+          </p>
+        </article>
+
+        <article class="project" aria-labelledby="evraz">
+          <p class="project-role">Android-разработчик</p>
+          <header class="project-header">
+            <h3 id="evraz">ЕВРАЗ · Документооборот</h3>
+            <p class="project-dates"><time datetime="2019-12">Декабрь 2019</time></p>
+          </header>
+          <p class="project-context">Внутреннее приложение для корпоративного документооборота.</p>
+          <ul class="contributions">
+            <li>
+              Поддерживал приложение, расширял существующие сценарии
+              и исправлял ошибки в унаследованном коде.
+            </li>
+          </ul>
+          <p class="project-stack"><span>Технологии:</span> Java, Android SDK, MVP, Gson, модульное тестирование</p>
+        </article>
+      </section>
+
+      <section class="employment" aria-labelledby="open-solutions">
+        <header class="employment-header">
+          <h2 id="open-solutions">Открытые решения</h2>
+          <p class="employment-dates"><time datetime="2018-05">Май 2018</time> — <time datetime="2019-03">Март 2019</time></p>
+        </header>
+
+        <article class="project" aria-labelledby="pek">
+          <p class="project-role">Android-разработчик</p>
+          <h3 id="pek">ПЭК · Грузоперевозки</h3>
+          <p class="project-context">Мобильное приложение для оформления, отслеживания и управления грузоперевозками.</p>
+          <ul class="contributions">
+            <li>Разработал расчёт стоимости перевозки и оформление заказа на основе расчёта.</li>
+            <li>Реализовал пошаговую регистрацию и собственный интерфейс съёмки документов с помощью Camera API.</li>
+            <li>Проводил рефакторинг унаследованного кода и исправлял ошибки в существующей функциональности.</li>
+          </ul>
+          <p class="project-stack"><span>Технологии:</span> Java, Android Navigation, Camera API, OrmLite, RxJava</p>
+        </article>
+      </section>
+
+      <footer class="experience-footer">
+        <a class="text-link" href="/">← На главную</a>
+        <a class="text-link" href="https://t.me/kulikovman">@kulikovman</a>
+      </footer>
+    </main>
+    <script type="module" src="/src/experience.js"></script>
+  </body>
+</html>
